@@ -12,7 +12,7 @@
     <aside>
         <div class="logo">
             <img src="./assets/images/icons/coffee.svg" alt="Zire">
-            <h1>Zire</h1>
+            <h1>Dashboard</h1>
         </div>
         <nav class="main-menu" aria-label="Primary">
             <ul>
@@ -22,30 +22,35 @@
                         <span>Home</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/account-group.svg" alt="">
                         <span>Profile</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/message-reply-outline.svg" alt="">
                         <span>Messages</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/clock-time-three-outline.svg" alt="">
                         <span>History</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/image-filter-none.svg" alt="">
                         <span>Task</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/account-group.svg" alt="">
@@ -63,12 +68,14 @@
                         <span>Settings</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/help-box-outline.svg" alt="">
                         <span>Support</span>
                     </a>
                 </li>
+
                 <li>
                     <a href="#">
                         <img src="./assets/images/icons/shield-check.svg" alt="">
@@ -79,13 +86,35 @@
         </nav>
     </aside>
     <header>
-        <div class="search_bar">
-            <img src="./assets/images/icons/magnify.svg" alt="">
+        <div class="search-bar">
             <form action="#" role="search">
-                <input type="search" aria-label="Search">
+                <label for="site-search" class="visually-hidden">Search</label>
+                <input id="site-search" type="search" placeholder="Search..." aria-label="Search">
+                <button type="submit">
+                    <img src="./assets/images/icons/magnify.svg" alt="" aria-hidden="true">
+                    <span class="visually-hidden">Search</span>
+                </button>
             </form>
         </div>
-        <div></div>
+
+        <div class="user-controls">
+            <button type="button">
+                <img src="./assets/images/icons/bell-ring-outline.svg" alt="Notifications">
+            </button>
+            <img src="./assets/images/avatars/ralph.png" alt="Profile picture of Eriz Godrovich">
+            <span>Eriz Godrovich</span>
+        </div>
+
+        <div class="user-greeting">
+            <img src="./assets/images/avatars/ralph.png" alt="Eriz Godrovich">
+            <p>Hi there, Eriz Godrovich (@zire)</p>
+        </div>
+
+        <div class="action-buttons">
+            <button type="button">New</button>
+            <button type="button">Upload</button>
+            <button type="button">Share</button>
+        </div>
     </header>
     <main></main>
 </body>
