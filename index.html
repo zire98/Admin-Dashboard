@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zire Dashboard</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <aside>
         <div class="logo">
-            <img src="./assets/images/icons/coffee.svg" alt="Zire">
+            <img src="./assets/images/icons/coffee.svg" alt="Zire" loading="lazy">
             <h1>Dashboard</h1>
         </div>
         <nav class="main-menu" aria-label="Primary">
@@ -91,7 +92,7 @@
                 <label for="site-search" class="visually-hidden">Search</label>
                 <input id="site-search" type="search" placeholder="Search..." aria-label="Search">
                 <button type="submit">
-                    <img src="./assets/images/icons/magnify.svg" alt="" aria-hidden="true">
+                    <img src="./assets/images/icons/magnify.svg" alt="">
                     <span class="visually-hidden">Search</span>
                 </button>
             </form>
@@ -101,12 +102,12 @@
             <button type="button">
                 <img src="./assets/images/icons/bell-ring-outline.svg" alt="Notifications">
             </button>
-            <img src="./assets/images/avatars/ralph.png" alt="Profile picture of Eriz Godrovich">
+            <img src="./assets/images/avatars/ralph.png" alt="" aria-hidden="true">
             <span>Eriz Godrovich</span>
         </div>
 
         <div class="user-greeting">
-            <img src="./assets/images/avatars/ralph.png" alt="Eriz Godrovich">
+            <img src="./assets/images/avatars/ralph.png" alt="" aria-hidden="true">
             <p>Hi there, Eriz Godrovich (@zire)</p>
         </div>
 
@@ -117,8 +118,8 @@
         </div>
     </header>
     <main>
+        <h2>Your projects</h2>
         <section class="projects">
-            <h2>Your projects</h2>
             <article>
                 <div class="card-text">
                     <h3>Project title</h3>
@@ -240,9 +241,8 @@
                 </div>
             </article>
         </section>
-
+        <h2>Announcements</h2>
         <section class="announcements">
-            <h2>Announcements</h2>
             <article>
                 <h3>Site Maintenance</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad explicabo quis dolorem autem
@@ -266,7 +266,7 @@
             <h2>Trending</h2>
             <ul>
                 <li>
-                    <a href="#" aria-label="View profile of @zire">
+                    <a href="#">
                         <img src="./assets/images/avatars/ralph.png" alt="" aria-hidden="true" width="48" height="48"
                             loading="lazy" decoding="async">
                         <div class="profile">
@@ -277,7 +277,7 @@
 
                 </li>
                 <li>
-                    <a href="#" aria-label="View profile of @zire">
+                    <a href="#">
                         <img src="./assets/images/avatars/ralph.png" alt="" aria-hidden="true" width="48" height="48"
                             loading="lazy" decoding="async">
                         <div class="profile">
@@ -288,7 +288,7 @@
 
                 </li>
                 <li>
-                    <a href="#" aria-label="View profile of @zire">
+                    <a href="#">
                         <img src="./assets/images/avatars/ralph.png" alt="" aria-hidden="true" width="48" height="48"
                             loading="lazy" decoding="async">
                         <div class="profile">
@@ -299,7 +299,7 @@
 
                 </li>
                 <li>
-                    <a href="#" aria-label="View profile of @zire">
+                    <a href="#">
                         <img src="./assets/images/avatars/ralph.png" alt="" aria-hidden="true" width="48" height="48"
                             loading="lazy" decoding="async">
                         <div class="profile">

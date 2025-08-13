@@ -1,0 +1,85 @@
+/* ===== Modern CSS Reset ===== */
+
+/* 1. Box sizing y rem base */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    /* Ajusta si quieres escalado */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 2. Eliminar márgenes por defecto */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* 3. Altura mínima 100% */
+html,
+body {
+    height: 100%;
+}
+
+/* 4. Tipografía base */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Imágenes y multimedia */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Quitar estilos por defecto de formularios */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 7. Botones sin background raro */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* 8. Links sin subrayado por defecto */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 9. Listas sin bullets */
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+/* 10. Espacios en tablas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
