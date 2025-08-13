@@ -1,20 +1,65 @@
 :root {
-    --color-bg: #f8f9fa;
-
+    --color-bg: #e0e0e0;
+    --aside-bg: #7d0000;
 }
 
 body {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "sidebar header"
         "sidebar main";
+    background-color: var(--color-bg);
+    height: 100vh;
 }
 
+
+/* aside */
+
 aside {
+    background-color: var(--aside-bg);
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    height: 100%;
+    row-gap: 2rem;
+    font-weight: bolder;
 }
+
+.logo {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+    gap: 0.5rem;
+}
+
+.main-menu ul li a {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-left: 1.9rem;
+    align-items: center;
+}
+
+.secondary-menu ul li a {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-left: 1.9rem;
+    align-items: center;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.icon-menu {
+    width: 30px;
+}
+
+
+
 
 header {
     grid-area: header;
