@@ -1,11 +1,11 @@
 :root {
     --color-bg: #e0e0e0;
-    --aside-bg: #7d0000;
+    --aside-bg: #8b0000;
 }
 
 body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: auto 1fr;
     grid-template-areas:
         "sidebar header"
@@ -58,9 +58,20 @@ aside {
     width: 30px;
 }
 
+/* Visually-hidden */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
-
-
+/*header*/
 header {
     grid-area: header;
     display: grid;
@@ -69,6 +80,43 @@ header {
     grid-template-areas:
         "search-bar user-controls"
         "user-greeting action-buttons";
+}
+
+.search-bar {
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.search-bar input {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.search-bar button {
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.user-controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.user-controls img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-greeting img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 main {
