@@ -180,6 +180,34 @@ main {
 }
 
 
+.trending {
+    grid-area: trending;
+}
+
+.trending ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.trend a {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    padding-bottom: 0.5rem;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
