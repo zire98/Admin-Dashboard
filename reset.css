@@ -33,12 +33,6 @@ body {
     height: 100%;
 }
 
-/* 4. Tipografía base */
-body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-}
-
 /* 5. Imágenes y multimedia */
 img,
 picture,

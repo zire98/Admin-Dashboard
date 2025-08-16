@@ -5,7 +5,7 @@ body {
     grid-template-areas:
         "aside header"
         "aside main";
-    background-color: grey;
+    min-height: 100vh;
 }
 
 .icon {
@@ -23,14 +23,14 @@ aside {
         "secondary-menu";
     background-color: brown;
     row-gap: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .logo {
     grid-area: logo;
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     gap: 0.5rem;
 }
 
@@ -59,7 +59,7 @@ header {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto auto;
     row-gap: 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: aliceblue;
 
 }
@@ -83,9 +83,11 @@ header {
     display: flex;
     align-items: center;
     gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.user-controls img {
+.profile-litle {
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -103,6 +105,10 @@ header {
     border-radius: 50%;
 }
 
+strong {
+    font-size: 1.4rem;
+}
+
 .action-buttons {
     display: flex;
     gap: 2rem;
@@ -114,20 +120,43 @@ header {
     height: 30px;
     width: 80px;
     border-radius: 20px;
+    font-weight: bolder;
 }
 
 main {
     grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+    background-color: rgb(212, 212, 212);
+    padding: 1.5rem;
+    gap: 1.5rem;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+.projects {
+    grid-area: projects;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    padding: 2rem 1.5rem;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-left: 6px solid brown;
+}
+
+.card-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: end;
 }
